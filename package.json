@@ -1,7 +1,7 @@
 {
   "name": "ts-ndarray",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Multidimensional arrays for JavaScript & TypeScript.",
   "author": "Chris Breuer <chris@stacksjs.org>",
   "license": "MIT",
