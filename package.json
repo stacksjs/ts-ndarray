@@ -27,18 +27,23 @@
   "types": "./dist/index.d.ts",
   "files": ["README.md", "dist"],
   "scripts": {
-    "build": "bun --bun build.ts && bun run compile",
+    "build": "bun --bun build.ts",
     "lint": "bunx --bun eslint .",
     "lint:fix": "bunx --bun eslint . --fix",
     "fresh": "bunx rimraf node_modules/ bun.lock && bun i",
     "changelog": "bunx changelogen --output CHANGELOG.md",
-    "prepublishOnly": "bun --bun run build && bun run compile:all",
+    "prepublishOnly": "bun --bun run build",
     "release": "bun run changelog && bunx bumpp package.json --all",
     "test": "bun test",
     "dev:docs": "bun --bun vitepress dev docs",
     "build:docs": "bun --bun vitepress build docs",
     "preview:docs": "bun --bun vitepress preview docs",
     "typecheck": "bun --bun tsc --noEmit"
+  },
+  "dependencies": {
+    "data-uri-to-buffer": "^6.0.2",
+    "jpgx": "^0.2.0",
+    "ts-gif": "^0.1.2"
   },
   "devDependencies": {
     "@iconify-json/carbon": "^1.2.6",
@@ -62,12 +67,9 @@
     "vitepress": "^1.6.3"
   },
   "overrides": {
-    "unconfig": "0.6.0"
+    "unconfig": "0.3.10"
   },
   "lint-staged": {
     "*.{js,ts}": "bunx --bun eslint . --fix"
-  },
-  "dependencies": {
-    "data-uri-to-buffer": "^6.0.2"
   }
 }

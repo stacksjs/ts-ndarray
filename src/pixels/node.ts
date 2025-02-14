@@ -1,13 +1,12 @@
-'use strict'
+import jpeg from 'jpgx'
 
+import { Reader as GifReader } from 'ts-gif'
 const path = require('node:path')
 const ndarray = require('ndarray')
 const PNG = require('pngjs').PNG
-const jpeg = require('jpeg-js')
-const pack = require('ndarray-pack')
-const GifReader = require('omggif').GifReader
 const fs = require('node:fs')
 const mime = require('mime-types')
+const pack = require('ndarray-pack')
 const Bitmap = require('node-bitmap')
 const parseDataURI = require('parse-data-uri')
 

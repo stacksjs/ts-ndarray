@@ -1,6 +1,6 @@
 import path from 'node:path'
 import parseDataURI from 'data-uri-to-buffer'
-import { GifReader } from 'omggif'
+import { Reader as GifReader } from 'ts-gif'
 import ndarray from '../index'
 import { convert as pack } from '../pack/convert'
 
