@@ -1,0 +1,33 @@
+---
+description: General information based on the latest ./README.md content
+globs: 
+---
+Update it if APIs change:
+
+# ts-ndarray
+
+> A TypeScript library for working with n-dimensional arrays.
+
+## Features
+
+- **N-dimensional**: Create and manipulate n-dimensional arrays.
+- **Multilinear** Bilinear and trilinear interpolation for ndarrays.
+- **Images** Utilities to read an image into an ndarray.
+- **Simple**: A simple API for working with n-dimensional arrays.
+- **Fast**: Built with performance in mind.
+- **Typed**: Written in TypeScript.
+
+## Get Started
+
+### Installation
+
+```bash
+npm install ts-ndarray
+# bun i ts-ndarray
+```
+
+### Usage
+
+```ts
+import { NdArray } from 'ts-ndarray'
+```
