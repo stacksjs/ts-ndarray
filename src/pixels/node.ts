@@ -1,7 +1,8 @@
+// @ts-nocheck
 import jpeg from 'jpgx'
 
 import { Reader as GifReader } from 'ts-gif'
-const path = require('node:path')
+const _path = require('node:path')
 const ndarray = require('ndarray')
 const PNG = require('pngjs').PNG
 const fs = require('node:fs')

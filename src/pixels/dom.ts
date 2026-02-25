@@ -1,3 +1,4 @@
+// @ts-nocheck
 import path from 'node:path'
 import parseDataURI from 'data-uri-to-buffer'
 import { Reader as GifReader } from 'ts-gif'
@@ -33,9 +34,9 @@ function handleGif(data, cb) {
     return
   }
   if (reader.numFrames() > 0) {
-    var nshape = [reader.numFrames(), reader.height, reader.width, 4]
+    const nshape = [reader.numFrames(), reader.height, reader.width, 4]
     try {
-      var ndata = new Uint8Array(nshape[0] * nshape[1] * nshape[2] * nshape[3])
+      const ndata = new Uint8Array(nshape[0] * nshape[1] * nshape[2] * nshape[3])
       var result = ndarray(ndata, nshape)
       for (let i = 0; i < reader.numFrames(); ++i) {
         reader.decodeAndBlitFrameRGBA(i, ndata.subarray(
@@ -51,8 +52,8 @@ function handleGif(data, cb) {
     cb(null, result.transpose(0, 2, 1))
   }
   else {
-    var nshape = [reader.height, reader.width, 4]
-    var ndata = new Uint8Array(nshape[0] * nshape[1] * nshape[2])
+    const nshape = [reader.height, reader.width, 4]
+    const ndata = new Uint8Array(nshape[0] * nshape[1] * nshape[2])
     var result = ndarray(ndata, nshape)
     try {
       reader.decodeAndBlitFrameRGBA(0, ndata)

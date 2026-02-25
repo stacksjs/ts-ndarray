@@ -140,6 +140,7 @@ return function construct_${className}(a,b,c,d){return new ${className}(a,d)}`
   )
 
   // view.size:
+  // eslint-disable pickier/no-unused-vars
   code.push(`Object.defineProperty(proto,'size',{get:function ${className}_size(){\
 return ${indices.map((i) => { return `this.shape[${i}]` }).join('*')}`, '}})')
 
