@@ -24,7 +24,12 @@
     "isolatedModules": true,
     "verbatimModuleSyntax": true,
     "skipDefaultLibCheck": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "paths": {
+      "jpgx": [
+        "./jpgx.d.ts"
+      ]
+    }
   },
   "exclude": [
     "node_modules"
