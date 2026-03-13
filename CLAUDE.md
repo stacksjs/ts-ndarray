@@ -2,7 +2,7 @@
 
 ## About
 
-Multidimensional arrays for JavaScript & TypeScript.
+A TypeScript library for creating and manipulating n-dimensional arrays. It provides bilinear and trilinear interpolation, utilities to read images into ndarrays, and a simple API designed for performance. Based on Mikola Lysenko's original ndarray ecosystem (ndarray, ndarray-linear-interpolate, ndarray-pack, get-pixels).
 
 ## Linting
 
