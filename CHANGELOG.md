@@ -1,3 +1,13 @@
+[Compare changes](https://github.com/stacksjs/ts-ndarray/compare/v0.1.3...v0.1.4)
+
+## 🧹 Chores
+
+- release v0.1.4 ([5a3485c](https://github.com/stacksjs/ts-ndarray/commit/5a3485c)) _(by Chris <chrisbreuer93@gmail.com>)_
+
+## Contributors
+
+- _Chris <chrisbreuer93@gmail.com>_
+
 [Compare changes](https://github.com/stacksjs/ts-ndarray/compare/v0.1.2...v0.1.3)
 
 ## ♻️ Code Refactoring
