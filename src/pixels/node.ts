@@ -1,5 +1,5 @@
 // @ts-nocheck
-import jpeg from 'jpgx'
+import jpeg from 'ts-jpeg'
 
 import { Reader as GifReader } from 'ts-gif'
 const _path = require('node:path')
