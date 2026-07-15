@@ -1,3 +1,17 @@
+[Compare changes](https://github.com/stacksjs/ts-ndarray/compare/v0.1.4...v0.1.5)
+
+## 🤖 Continuous Integration
+
+- **release**: publish via pantry with OIDC ([a8a9eab](https://github.com/stacksjs/ts-ndarray/commit/a8a9eab)) _(by Chris <chrisbreuer93@gmail.com>)_
+
+## 🧹 Chores
+
+- release v0.1.5 ([92ba55a](https://github.com/stacksjs/ts-ndarray/commit/92ba55a)) _(by Chris <chrisbreuer93@gmail.com>)_
+
+## Contributors
+
+- _Chris <chrisbreuer93@gmail.com>_
+
 [Compare changes](https://github.com/stacksjs/ts-ndarray/compare/v0.1.3...v0.1.4)
 
 ## 🧹 Chores
