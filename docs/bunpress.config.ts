@@ -1,12 +1,19 @@
-import type { BunPressConfig } from 'bunpress'
+import type { BunPressConfig } from '@stacksjs/bunpress'
 
 const config: BunPressConfig = {
-  name: 'ts-ndarray',
+  title: 'ts-ndarray',
   description: 'Multidimensional arrays for JavaScript & TypeScript',
   url: 'https://ts-ndarray.stacksjs.org',
 
-  theme: {
-    primaryColor: '#0ea5e9',
+  themeConfig: {
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/stacksjs/ts-ndarray' },
+      { icon: 'discord', link: 'https://discord.gg/stacksjs' },
+      { icon: 'twitter', link: 'https://twitter.com/stacksjs' },
+    ],
+    colors: {
+      primary: '#0ea5e9',
+    },
   },
 
   sidebar: [
@@ -42,17 +49,12 @@ const config: BunPressConfig = {
     },
   ],
 
-  navbar: [
+  nav: [
     { text: 'Home', link: '/' },
     { text: 'Guide', link: '/guide/getting-started' },
     { text: 'GitHub', link: 'https://github.com/stacksjs/ts-ndarray' },
   ],
 
-  socialLinks: [
-    { icon: 'github', link: 'https://github.com/stacksjs/ts-ndarray' },
-    { icon: 'discord', link: 'https://discord.gg/stacksjs' },
-    { icon: 'twitter', link: 'https://twitter.com/stacksjs' },
-  ],
 }
 
 export default config
